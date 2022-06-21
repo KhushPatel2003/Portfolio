@@ -91,6 +91,7 @@ const LandingPage = () => {
             flex-direction: column;
             justify-content: center;
             text-align: center;
+            cursor: pointer;
           }
           .work {
             margin-left: 4%;
