@@ -4,7 +4,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import colors from "../constants/colors.ts";
 import ListSeperator from "./listSeperator";
 import SiteScope from "../public/SiteScopeLogo.PNG";
-import Foodi from "../public/Foodi.PNG";
+import Foodi from "../public/Foodi.png";
 
 const Experiences = () => {
   const onPress = (link) => {
