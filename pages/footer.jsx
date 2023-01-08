@@ -174,7 +174,7 @@ const Footer = () => {
           text-decoration: none;
           border: 2px solid #010100;
           padding: 15px;
-          color: #000;
+          color: #141204;
           text-transform: uppercase;
           letter-spacing: 2px;
           position: relative;
@@ -263,7 +263,7 @@ const Footer = () => {
           bottom: 0;
           width: 6rem;
           height: 6rem;
-          background: #000;
+          background: #141204;
           border-radius: 50%;
           z-index: -1;
           transform: scale(0);

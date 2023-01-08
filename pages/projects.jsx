@@ -110,7 +110,7 @@ const Projects = () => {
       title: "Calculator Discord Bot",
       location: "Niagara Falls, ON",
       date: "May 2021 - August 2021",
-      link: "https://github.com/KhushPatel2003/Calculator-Discord-Bot",
+      link: "https://github.com/KhushPatel2003",
       disc: "Calculator Discord Bot was made using Discord.py. The bot can do simple         calculations ranging from addition to cubing a number. The user can call         the bot by prefixing the calculation with !math_”type of calculation”.",
       logo: {
         src: Calc,
@@ -219,11 +219,11 @@ const Projects = () => {
           align-items: center;
           justify-items: center;
           max-width: 1500px;
-          z-index: 2;
+          z-index: 1;
         }
         .card {
           margin: 10px 10px;
-          width: 400px;
+          width: 375px;
           height: 500px;
           background-color: ${colors.main.backGroundColor};
           border-radius: 10px;

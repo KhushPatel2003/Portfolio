@@ -1,13 +1,17 @@
+import React from "react";
 import Image from "next/image";
 import { Link } from "react-scroll";
 
 import colors from "../constants/colors.ts";
-import portrait from "../public/KhushTransparent.jpeg";
-import steve from "../public/tmp.png";
+import steve from "../public/tmp1.PNG";
+import sairah from "../public/tmp2.PNG";
 import ListSeperator from "./listSeperator";
 import signature from "../public/signature.png";
 
 const LandingPage = () => {
+  const [isHovering, setIsHovered] = React.useState(false);
+  const onMouseEnter = () => setIsHovered(true);
+  const onMouseLeave = () => setIsHovered(false);
   return (
     <div className="container">
       <div className="navBar">
@@ -40,20 +44,33 @@ const LandingPage = () => {
       </div>
       <div className="text">
         <p>
-          Software Engineer @ Foodi ‎ ‎ | ‎ ‎ 2A Computer Engineering student at
-          the University of Waterloo
+          Software Engineer @ TradeRev ‎ ‎ | ‎ ‎ 2B Computer Engineering student
+          at the University of Waterloo
         </p>
       </div>
       <div className="line">
         <ListSeperator color={colors.main.black} />
       </div>
-      <div className="image shadow">
-        <Image
-          src={steve}
-          alt="Picture of Khush Patel"
-          layout="fill"
-          objectFit="scale-down"
-        />
+      <div
+        className="image shadow"
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+      >
+        {isHovering ? (
+          <Image
+            src={sairah}
+            alt="Picture of Khush Patel"
+            layout="fill"
+            objectFit="scale-down"
+          />
+        ) : (
+          <Image
+            src={steve}
+            alt="Picture of Khush Patel"
+            layout="fill"
+            objectFit="scale-down"
+          />
+        )}
       </div>
       <style jsx>
         {`

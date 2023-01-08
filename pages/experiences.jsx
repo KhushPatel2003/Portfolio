@@ -5,6 +5,8 @@ import colors from "../constants/colors.ts";
 import ListSeperator from "./listSeperator";
 import SiteScope from "../public/SiteScopeLogo.PNG";
 import Foodi from "../public/Foodi.png";
+import TradeRev from "../public/TradeRev.png";
+import CodeStake from "../public/CodeStake.png";
 
 const Experiences = () => {
   const onPress = (link) => {
@@ -14,11 +16,39 @@ const Experiences = () => {
   const experiencesObject = [
     {
       title: "Software Engineer",
+      company: "TradeRev",
+      location: "Niagara Falls, ON | Waterloo, ON",
+      date: "Jan 2023 - Present",
+      link: "https://www.traderev.com/en-ca/",
+      disc: "Working on the backend team utilizing technologies including Node, Kotlin, Swift, Go, AWS, and Kubernetes.",
+      logo: {
+        src: TradeRev,
+        alt: "Foodi Logo",
+        width: 920 / 4,
+        height: 283 / 4,
+      },
+    },
+    {
+      title: "Co-Founder",
+      company: "CodeStake",
+      location: "Niagara Falls, ON",
+      date: "May 2021 - Present",
+      link: "https://codestake.ca",
+      disc: "Co-founder of a free online platform that allows users to earn cryptocurrency through competitive programming. Added user security through the use of Google OAuth whilst storing user information in a Firestore database. Allowed users to connect to MetaMask cryptocurrency wallet through Web3 API to allow for smooth transactions. Acquired 50+ beta testers willing to foresee future development and features.",
+      logo: {
+        src: CodeStake,
+        alt: "SiteScope Logo",
+        width: 174 / 1.8,
+        height: 89 / 1.8,
+      },
+    },
+    {
+      title: "Software Engineer",
       company: "Foodi",
       location: "Niagara Falls, ON | Waterloo, ON",
-      date: "May 2022 - Present",
+      date: "May 2022 - August 2022",
       link: "https://www.joinfoodi.com",
-      disc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+      disc: "Worked on a mobile app using React Native & Redux for frontend. AWS Amplify, DynamoDB, & GraphQL for backend. Implemented notifications from scratch and hosted the push notification service on AWS using Lambda functions, resulting in a 50% increase in user interaction. Implemented pagination on GraphQL queries leading to reduced load times by 20% and minimizing costs.",
       logo: {
         src: Foodi,
         alt: "Foodi Logo",
@@ -27,12 +57,12 @@ const Experiences = () => {
       },
     },
     {
-      title: "Full Stack Developer",
+      title: "Software Developer",
       company: "SiteScope",
       location: "Niagara Falls, ON",
       date: "May 2021 - August 2021",
       link: "https://sitescope.tech",
-      disc: "‎Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      disc: "Led the development of designing and developing the company’s website with ReactJs and Figma, hosted on Netlify. Worked closely with company to establish project guidelines and create project specifications via an agile methodology. Assisted the startup in accumulating 100+ users to gain feedback and insight on the service.",
       logo: {
         src: SiteScope,
         alt: "SiteScope Logo",
@@ -133,7 +163,7 @@ const Experiences = () => {
         }
         .card {
           margin: 10px 10px;
-          width: 400px;
+          width: 375px;
           height: 500px;
           background-color: ${colors.main.black};
           border-radius: 10px;
