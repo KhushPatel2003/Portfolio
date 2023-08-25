@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaTelegramPlane } from "react-icons/fa";
+import {FaTelegramPlane} from "react-icons/fa";
 
 import colors from "../constants/colors.ts";
 import ListSeperator from "./listSeperator";
@@ -10,12 +10,28 @@ import GeeseSpotter from "../public/GeeseSpotter.png";
 import vegetarian from "../public/vegetarian.png";
 import ece198 from "../public/198.png";
 import Weather from "../public/Weather.png";
+import ProductPal from "../public/logo.png";
 
 const Projects = () => {
   const onPress = (link) => {
     window.open(link, "_blank");
   };
   const projectObj = [
+    {
+      title: "Product Pal",
+      location: "uOttawa",
+      date: "Feb 2023",
+      link: "https://github.com/KhushPatel2003/productpal",
+      disc: "Product Pal. For your shopping frenzy. A shopping chrome extension that helps users discover suitable products by understanding their preferences. Created using GPT-3 (Davinci Text Model).",
+      logo: {
+        src: ProductPal,
+        alt: "Foodi Logo",
+        width: 300 / 3,
+        height: 300 / 3,
+        rounded: true,
+        roundedRadius: "10px",
+      },
+    },
     {
       title: "Mo Money",
       location: "Niagara Falls, ON | Waterloo, ON",
@@ -158,12 +174,12 @@ const Projects = () => {
                 </div>
                 <p className="title">{projects.title}</p>
                 <p className="date">{projects.date}</p>
-                <div className="line" style={{ width: "40%" }}>
+                <div className="line" style={{width: "40%"}}>
                   <ListSeperator color={colors.main.black} />
                 </div>
                 <p
                   className="date"
-                  style={{ width: "80%", paddingBottom: "25px" }}
+                  style={{width: "80%", paddingBottom: "25px"}}
                 >
                   ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ {projects.disc}
                 </p>
@@ -220,6 +236,7 @@ const Projects = () => {
           justify-items: center;
           max-width: 1500px;
           z-index: 1;
+          // background-color: red;
         }
         .card {
           margin: 10px 10px;
@@ -291,6 +308,7 @@ const Projects = () => {
         }
 
         .slantedDivA {
+          margin-top: 5.5%;
           width: 100%;
           height: 200px;
           position: relative;

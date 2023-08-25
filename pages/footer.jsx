@@ -1,12 +1,8 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import colors from "../constants/colors.ts";
 import ListSeperator from "./listSeperator";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPhone,
-  faMailBulk,
-  faMapPin,
-} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faPhone, faMailBulk, faMapPin} from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faInstagram,
@@ -47,15 +43,8 @@ const Footer = () => {
             <p className="text">Niagara Falls, ON Canada</p>
           </div>
         </div>
-        <div className="line" style={{ paddingBottom: "1%" }}>
+        <div className="line" style={{paddingBottom: "1%"}}>
           <ListSeperator color={colors.main.black} />
-        </div>
-        <div className="center" style={{ paddingBottom: "1%" }}>
-          <div className="btn-1">
-            <a href="/Résumé.pdf">
-              <span style={{ position: "relative", zIndex: 3 }}>Résumé</span>
-            </a>
-          </div>
         </div>
         <section>
           <ul className="iconList">

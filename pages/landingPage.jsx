@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { Link } from "react-scroll";
+import {Link} from "react-scroll";
 
 import colors from "../constants/colors.ts";
 import steve from "../public/tmp1.PNG";
@@ -44,8 +44,8 @@ const LandingPage = () => {
       </div>
       <div className="text">
         <p>
-          Software Engineer @ TradeRev ‎ ‎ | ‎ ‎ 2B Computer Engineering student
-          at the University of Waterloo
+          Software Engineer @ Genesys ‎ ‎ | ‎ ‎ 3rd-Year Computer Engineering
+          student at the University of Waterloo
         </p>
       </div>
       <div className="line">

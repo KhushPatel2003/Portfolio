@@ -1,12 +1,14 @@
 import Image from "next/image";
-import { FaTelegramPlane } from "react-icons/fa";
+import {FaTelegramPlane} from "react-icons/fa";
 
 import colors from "../constants/colors.ts";
 import ListSeperator from "./listSeperator";
 import SiteScope from "../public/SiteScopeLogo.PNG";
 import Foodi from "../public/Foodi.png";
-import TradeRev from "../public/TradeRev.png";
+import Openlane from "../public/openlane.png";
 import CodeStake from "../public/CodeStake.png";
+import Genesys from "../public/genesys.png";
+import Watolink from "../public/WATOLINK.jpeg";
 
 const Experiences = () => {
   const onPress = (link) => {
@@ -16,16 +18,44 @@ const Experiences = () => {
   const experiencesObject = [
     {
       title: "Software Engineer",
-      company: "TradeRev",
-      location: "Niagara Falls, ON | Waterloo, ON",
-      date: "Jan 2023 - Present",
-      link: "https://www.traderev.com/en-ca/",
-      disc: "Working on the backend team utilizing technologies including Node, Kotlin, Swift, Go, AWS, and Kubernetes.",
+      company: "Genesys",
+      location: "Toronto, ON",
+      date: "Sep 2023 - Dec 2023",
+      link: "https://www.genesys.com",
+      disc: "Anticipated to work with the WFM (Workforce Management) team leveraging AWS, Node, Typescript & Serverless.",
       logo: {
-        src: TradeRev,
-        alt: "Foodi Logo",
-        width: 920 / 4,
-        height: 283 / 4,
+        src: Genesys,
+        alt: "Genesys Logo",
+        width: 200 / 2,
+        height: 200 / 2,
+      },
+    },
+    {
+      title: "Software Engineer",
+      company: "Openlane",
+      location: "Toronto, ON",
+      date: "Jan 2023 - Apr 2023",
+      link: "https://www.openlane.ca/en/",
+      disc: "Worked with the DEFCON team handeling the user-org & IAM microservices. Utilized technologies including Node, Typescript, AWS, Docker & Serverless. Designed and implemented an event processing system using AWS Lambda and SQS that streamlines 20K+ user events daily, decreasing processing times and resolving race conditions",
+      logo: {
+        src: Openlane,
+        alt: "Openlane Logo",
+        width: 200 / 2,
+        height: 200 / 2,
+      },
+    },
+    {
+      title: "Team Member",
+      company: "WATOLINK",
+      location: "Waterloo, ON",
+      date: "Jan 2023 - Aug 2023",
+      link: "https://www.watolink.ca",
+      disc: "Univeristy of Waterloo's neurotech design team aiming to develop applications involving action-classification via EEG signal analysis and inference. Worked with BCI Gaming team to develop a Unity game with blink-based movement control using EEG signals, advancing accessibility in gaming",
+      logo: {
+        src: Watolink,
+        alt: "Watolink Logo",
+        width: 200 / 2,
+        height: 200 / 2,
       },
     },
     {
@@ -37,7 +67,7 @@ const Experiences = () => {
       disc: "Co-founder of a free online platform that allows users to earn cryptocurrency through competitive programming. Added user security through the use of Google OAuth whilst storing user information in a Firestore database. Allowed users to connect to MetaMask cryptocurrency wallet through Web3 API to allow for smooth transactions. Acquired 50+ beta testers willing to foresee future development and features.",
       logo: {
         src: CodeStake,
-        alt: "SiteScope Logo",
+        alt: "CodeStake Logo",
         width: 174 / 1.8,
         height: 89 / 1.8,
       },
@@ -97,12 +127,12 @@ const Experiences = () => {
                 </div>
                 <p className="title">{experience.title}</p>
                 <p className="date">{experience.date}</p>
-                <div className="line" style={{ width: "40%" }}>
+                <div className="line" style={{width: "40%"}}>
                   <ListSeperator color={colors.main.backGroundColor} />
                 </div>
                 <p
                   className="date"
-                  style={{ width: "80%", paddingBottom: "25px" }}
+                  style={{width: "80%", paddingBottom: "25px"}}
                 >
                   ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ {experience.disc}
                 </p>
