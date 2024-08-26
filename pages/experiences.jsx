@@ -3,12 +3,10 @@ import {FaTelegramPlane} from "react-icons/fa";
 
 import colors from "../constants/colors.ts";
 import ListSeperator from "./listSeperator";
-import SiteScope from "../public/SiteScopeLogo.PNG";
 import Foodi from "../public/Foodi.png";
 import Openlane from "../public/openlane.png";
-import CodeStake from "../public/CodeStake.png";
 import Genesys from "../public/genesys.png";
-import Watolink from "../public/WATOLINK.jpeg";
+import theScore from "../public/theScore.png";
 
 const Experiences = () => {
   const onPress = (link) => {
@@ -17,12 +15,26 @@ const Experiences = () => {
 
   const experiencesObject = [
     {
-      title: "Software Engineer",
+      title: "Software Engineering Intern",
+      company: "theScore",
+      location: "Toronto, ON",
+      date: "Sep 2023 - Dec 2023",
+      link: "https://thescore.bet",
+      disc: "Worked on the Sportsbook platform using Elixir, GraphQL, gRPC, and Kubernetes.",
+      logo: {
+        src: theScore,
+        alt: "theScore Logo",
+        width: 200 / 2,
+        height: 200 / 2,
+      },
+    },
+    {
+      title: "Software Engineering Intern",
       company: "Genesys",
       location: "Toronto, ON",
       date: "Sep 2023 - Dec 2023",
       link: "https://www.genesys.com",
-      disc: "Anticipated to work with the WFM (Workforce Management) team leveraging AWS, Node, Typescript & Serverless.",
+      disc: "Worked with the Agent Scheduling team using Java, Kafka, and AWS.",
       logo: {
         src: Genesys,
         alt: "Genesys Logo",
@@ -31,12 +43,12 @@ const Experiences = () => {
       },
     },
     {
-      title: "Software Engineer",
+      title: "Software Engineering Intern",
       company: "Openlane",
       location: "Toronto, ON",
       date: "Jan 2023 - Apr 2023",
       link: "https://www.openlane.ca/en/",
-      disc: "Worked with the DEFCON team handeling the user-org & IAM microservices. Utilized technologies including Node, Typescript, AWS, Docker & Serverless. Designed and implemented an event processing system using AWS Lambda and SQS that streamlines 20K+ user events daily, decreasing processing times and resolving race conditions",
+      disc: "Worked with the DEFCON team handling user-org and IAM microservices, using Node, TypeScript, AWS, Docker, and Serverless.",
       logo: {
         src: Openlane,
         alt: "Openlane Logo",
@@ -45,61 +57,19 @@ const Experiences = () => {
       },
     },
     {
-      title: "Team Member",
-      company: "WATOLINK",
-      location: "Waterloo, ON",
-      date: "Jan 2023 - Aug 2023",
-      link: "https://www.watolink.ca",
-      disc: "Univeristy of Waterloo's neurotech design team aiming to develop applications involving action-classification via EEG signal analysis and inference. Worked with BCI Gaming team to develop a Unity game with blink-based movement control using EEG signals, advancing accessibility in gaming",
-      logo: {
-        src: Watolink,
-        alt: "Watolink Logo",
-        width: 200 / 2,
-        height: 200 / 2,
-      },
-    },
-    {
-      title: "Co-Founder",
-      company: "CodeStake",
-      location: "Niagara Falls, ON",
-      date: "May 2021 - Present",
-      link: "https://codestake.ca",
-      disc: "Co-founder of a free online platform that allows users to earn cryptocurrency through competitive programming. Added user security through the use of Google OAuth whilst storing user information in a Firestore database. Allowed users to connect to MetaMask cryptocurrency wallet through Web3 API to allow for smooth transactions. Acquired 50+ beta testers willing to foresee future development and features.",
-      logo: {
-        src: CodeStake,
-        alt: "CodeStake Logo",
-        width: 174 / 1.8,
-        height: 89 / 1.8,
-      },
-    },
-    {
-      title: "Software Engineer",
+      title: "Software Engineering Intern",
       company: "Foodi",
       location: "Niagara Falls, ON | Waterloo, ON",
       date: "May 2022 - August 2022",
       link: "https://www.joinfoodi.com",
-      disc: "Worked on a mobile app using React Native & Redux for frontend. AWS Amplify, DynamoDB, & GraphQL for backend. Implemented notifications from scratch and hosted the push notification service on AWS using Lambda functions, resulting in a 50% increase in user interaction. Implemented pagination on GraphQL queries leading to reduced load times by 20% and minimizing costs.",
+      disc: "Worked on a mobile app using React Native & Redux for frontend. AWS Amplify, DynamoDB, & GraphQL for backend.",
       logo: {
         src: Foodi,
         alt: "Foodi Logo",
         width: 200 / 2,
         height: 200 / 2,
       },
-    },
-    {
-      title: "Software Developer",
-      company: "SiteScope",
-      location: "Niagara Falls, ON",
-      date: "May 2021 - August 2021",
-      link: "https://sitescope.tech",
-      disc: "Led the development of designing and developing the company’s website with ReactJs and Figma, hosted on Netlify. Worked closely with company to establish project guidelines and create project specifications via an agile methodology. Assisted the startup in accumulating 100+ users to gain feedback and insight on the service.",
-      logo: {
-        src: SiteScope,
-        alt: "SiteScope Logo",
-        width: 371 / 2,
-        height: 150 / 2,
-      },
-    },
+    }
   ];
 
   return (
@@ -194,7 +164,7 @@ const Experiences = () => {
         .card {
           margin: 10px 10px;
           width: 375px;
-          height: 500px;
+          height: 450px;
           background-color: ${colors.main.black};
           border-radius: 10px;
           display: flex;

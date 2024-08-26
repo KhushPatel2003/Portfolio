@@ -44,7 +44,7 @@ const LandingPage = () => {
       </div>
       <div className="text">
         <p>
-          Software Engineer @ Genesys ‎ ‎ | ‎ ‎ 3rd-Year Computer Engineering
+          Computer Engineering
           student at the University of Waterloo
         </p>
       </div>

@@ -50,7 +50,7 @@ const Footer = () => {
           <ul className="iconList">
             <li className="iconItem">
               <a
-                href="https://www.instagram.com/_khush.patel/"
+                href="https://www.instagram.com/khushers/"
                 className="iconLink"
               >
                 <FontAwesomeIcon

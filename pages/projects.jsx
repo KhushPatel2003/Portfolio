@@ -3,14 +3,11 @@ import {FaTelegramPlane} from "react-icons/fa";
 
 import colors from "../constants/colors.ts";
 import ListSeperator from "./listSeperator";
-import MoMoney from "../public/MoMoney.jpeg";
-import EngHack from "../public/EngHack.png";
-import Calc from "../public/Calc.png";
-import GeeseSpotter from "../public/GeeseSpotter.png";
 import vegetarian from "../public/vegetarian.png";
 import ece198 from "../public/198.png";
-import Weather from "../public/Weather.png";
 import ProductPal from "../public/logo.png";
+import CodeStake from "../public/CodeStake.png";
+import Watolink from "../public/WATOLINK.jpeg";
 
 const Projects = () => {
   const onPress = (link) => {
@@ -18,11 +15,39 @@ const Projects = () => {
   };
   const projectObj = [
     {
+      title: "CodeStake",
+      company: "CodeStake",
+      location: "",
+      date: "",
+      link: "https://codestake.ca",
+      disc: "Created a competitive coding platform, enabling users to engage in real-time coding challenges using Next.Js, Node & GCP. Amplified user security by implementing Google OAuth and utilized a Firestore database to store user information",
+      logo: {
+        src: CodeStake,
+        alt: "CodeStake Logo",
+        width: 174 / 1.5,
+        height: 89 / 1.5,
+      },
+    },
+    {
+      title: "Team Member",
+      company: "WATOLINK",
+      location: "",
+      date: "",
+      link: "https://www.watolink.ca",
+      disc: "Univeristy of Waterloo's neurotech design team. Worked with BCI Gaming team to develop a Unity game with blink-based movement control using EEG signals.",
+      logo: {
+        src: Watolink,
+        alt: "Watolink Logo",
+        width: 200 / 2,
+        height: 200 / 2,
+      },
+    },
+    {
       title: "Product Pal",
-      location: "uOttawa",
-      date: "Feb 2023",
+      location: "",
+      date: "",
       link: "https://github.com/KhushPatel2003/productpal",
-      disc: "Product Pal. For your shopping frenzy. A shopping chrome extension that helps users discover suitable products by understanding their preferences. Created using GPT-3 (Davinci Text Model).",
+      disc: "Product Pal. For your shopping frenzy. A shopping chrome extension that helps users discover suitable products by understanding their preferences.",
       logo: {
         src: ProductPal,
         alt: "Foodi Logo",
@@ -33,26 +58,11 @@ const Projects = () => {
       },
     },
     {
-      title: "Mo Money",
-      location: "Niagara Falls, ON | Waterloo, ON",
-      date: "May 2022 - Present",
-      link: "https://github.com/KhushPatel2003",
-      disc: "Calculating ACB gain and losses are incredibly important to finial institution such as the CRA. Thus but creating Mo Money, which generates documents for tax for the Canadian Revenue Agency (CRA). The program utilizes Classes, LinkedLists and dynamic memory allocation to calculate the gain/lose of ETFs. The program also sorts all transitions according to date.",
-      logo: {
-        src: MoMoney,
-        alt: "Foodi Logo",
-        width: 380 / 3,
-        height: 260 / 3,
-        rounded: true,
-        roundedRadius: "10px",
-      },
-    },
-    {
       title: "Vegetarian Element",
-      location: "Niagara Falls, ON",
-      date: "May 2021 - August 2021",
+      location: "",
+      date: "",
       link: "https://github.com/KhushPatel2003",
-      disc: "Coming from a background that promotes a vegetarian diet it was really hard for me to find suitable recipes that I could try out. Thus, I took it upon myself to create a web application that uses the Edamam search API to retrieve vegetarian recipes. The recipe tiles include calories, serving size, total time, ingredients, eat… The application was made using ReactJS, HTML, CSS and Javascript.",
+      disc: "Faced with difficulty finding suitable vegetarian recipes, built a web application that uses the Edamam search API to retrieve vegetarian recipes. The app displays recipe tiles with calories, serving size, total time, and ingredients, created using ReactJS.",
       logo: {
         src: vegetarian,
         alt: "SiteScope Logo",
@@ -63,41 +73,11 @@ const Projects = () => {
       },
     },
     {
-      title: "Geese Spotter",
-      location: "Niagara Falls, ON",
-      date: "May 2021 - August 2021",
-      link: "https://github.com/KhushPatel2003",
-      disc: "Geese are part of Waterloo life! Everyone knows to not get too close to a goose, in particular a mother goose with her goslings. Geese Spotter is inspired off minesweeper where the user is presented with a board filled with “geese” (bombs) and the objective is to correctly find out where all the geese are at. The program was developed through bit shift manipulation and various helper functions.",
-      logo: {
-        src: GeeseSpotter,
-        alt: "SiteScope Logo",
-        width: 1000 / 10,
-        height: 1000 / 10,
-        rounded: true,
-        roundedRadius: "30px",
-      },
-    },
-    {
-      title: "Weather Discord Bot",
-      location: "Niagara Falls, ON",
-      date: "May 2021 - August 2021",
-      link: "https://github.com/KhushPatel2003/Weather-Bot",
-      disc: "Weather Discord Bot was made using the OpenWeatherAPI and Discord.py. The user can simply asks the bot about the weather in a certain city by prefixing the city name with “!“. The main objective of the bot was to learn how to use and implement APIs.",
-      logo: {
-        src: Weather,
-        alt: "SiteScope Logo",
-        width: 300 / 3,
-        height: 300 / 3,
-        rounded: true,
-        roundedRadius: "20px",
-      },
-    },
-    {
       title: "Binary Riddle",
-      location: "Niagara Falls, ON",
-      date: "May 2021 - August 2021",
+      location: "",
+      date: "",
       link: "https://github.com/KhushPatel2003/Binary-Riddle",
-      disc: " “Binary Riddle”, a twist on one of the many escape room puzzles designed to test individuals problem-solving skills. The program has 4 keys for the user to interact with, keys “1”, “0”, “delete” and “enter”. The user will use the 1 and 0 keys to enter the desired binary digits to solve the riddles, the delete key to modify the answer, and lastly, the enter key to check if their answer to the problem is correct. Binary Riddle was authored using classes, the Nucleo-64 STM32 Board, and 2D arrays.",
+      disc: " Created “Binary Riddle,” a twist on escape room puzzles designed to test problem-solving skills. The program features 4 keys—“1,” “0,” “delete,” and “enter”—allowing users to input binary digits to solve riddles, modify answers, and check correctness. Developed using the Nucleo-64 STM32 Board",
       logo: {
         src: ece198,
         alt: "SiteScope Logo",
@@ -106,37 +86,7 @@ const Projects = () => {
         rounded: false,
         roundedRadius: "0px",
       },
-    },
-    {
-      title: "EngHack",
-      location: "Niagara Falls, ON",
-      date: "May 2021 - August 2021",
-      link: "https://github.com/KhushPatel2003/MyFitnessLog",
-      disc: "During the 3 day hackathon me and my team collaborated to make a fitness tracking program called “My Fitness Log”. Throughout the 3 days we created a python application, a sigma design for our website to promote the product, and lastly a functioning website to display our finished product.",
-      logo: {
-        src: EngHack,
-        alt: "SiteScope Logo",
-        width: 598 / 6,
-        height: 598 / 6,
-        rounded: true,
-        roundedRadius: "30px",
-      },
-    },
-    {
-      title: "Calculator Discord Bot",
-      location: "Niagara Falls, ON",
-      date: "May 2021 - August 2021",
-      link: "https://github.com/KhushPatel2003",
-      disc: "Calculator Discord Bot was made using Discord.py. The bot can do simple         calculations ranging from addition to cubing a number. The user can call         the bot by prefixing the calculation with !math_”type of calculation”.",
-      logo: {
-        src: Calc,
-        alt: "SiteScope Logo",
-        width: 400 / 4,
-        height: 400 / 4,
-        rounded: true,
-        roundedRadius: "20px",
-      },
-    },
+    }
   ];
 
   return (
@@ -241,7 +191,7 @@ const Projects = () => {
         .card {
           margin: 10px 10px;
           width: 375px;
-          height: 500px;
+          height: 415px;
           background-color: ${colors.main.backGroundColor};
           border-radius: 10px;
           display: flex;

@@ -9,6 +9,7 @@ import cabinOut from "../public/cabinOut.jpg";
 import canoing from "../public/canoing.jpg";
 import engDay from "../public/engDay.JPG";
 import lake from "../public/lake.JPG";
+import pubOnKing from "../public/pubOnKing.JPG"
 
 import colors from "../constants/colors.ts";
 import ListSeperator from "./listSeperator";
@@ -21,10 +22,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const AboutMe = () => {
-  const imgArr = [banff, beach, cabinOut, lake, cabinIn, canoing, engDay];
+  const imgArr = [banff, beach, cabinOut, lake, cabinIn, canoing, engDay, pubOnKing];
   const widthArr = [
     3024 / 5,
     3024 / 9,
+    3024 / 5,
     3024 / 5,
     3024 / 5,
     3024 / 5,
@@ -57,12 +59,6 @@ const AboutMe = () => {
       <div className="content">
         <div
           className="responsive-image"
-          // style={{
-          //   borderRadius: "10px",
-          //   overflow: "hidden",
-          //   width: widthArr[currentIndex],
-          //   height: 4032 / 9,
-          // }}
         >
           <Image
             src={imgArr[currentIndex]}
@@ -108,14 +104,7 @@ const AboutMe = () => {
         </div>
         <div className="textHolder">
           <p className="text">
-            Hey! My name’s Khush Patel and I am currently a Software Engineer at
-            Genesys 🧑🏾‍💻! I am 20 years old and a computer engineering student at
-            the University of Waterloo📚. I am originally from India but
-            currently reside in Canada 🇮🇳 -> 🇨🇦! Growing up I’ve always been
-            curious about topics in the engineering and tech field 🧑🏾‍🔧, compiling
-            me to study Computer Engineering 🛠️💻. Although I may not know where
-            my educational journey will take me, I will be pursuing what I love
-            and hopefully meeting some cool people along the way 🌎!
+          Moments Worth Sharing
             <br></br>
             <br></br>
           </p>
